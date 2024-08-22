@@ -1,0 +1,126 @@
+.CenterText1 {
+    font-size: 75px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    top: 230px;
+    color: white;
+    line-height: 70px;
+    z-index: -1;
+}
+
+.CenterText2 {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    top: 270px;
+    color: white;
+    line-height: 20px;
+    z-index: -1
+}
+
+.startPlaningBtn {
+    position: absolute;
+    margin: auto;
+    left: 650px;
+    top: 580px;
+    padding: 17px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: #228B22;
+    color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    transition: all 0.5s ease;
+    z-index: -1
+    
+  }
+  
+.startPlaningBtn:hover {
+    letter-spacing: 3px;
+    background-color: #228b22a5;
+    color: hsl(0, 0%, 100%);
+    box-shadow: #228B22;
+  }
+  
+.startPlaningBtn:active {
+    letter-spacing: 3px;
+    background-color: #228b2229;
+    color: hsl(0, 0%, 100%);
+    box-shadow: #228B22;
+    transform: translateY(10px);
+    transition: 100ms;
+  }
+  
+
+  /* Styles for screens larger than 1024px (desktops and large tablets) */
+@media (min-width: 1024px) {
+    .CenterText1 {
+        font-size: 75px;
+        top: 230px;
+    }
+
+    .CenterText2 {
+        font-size: 18px;
+        top: 270px;
+    }
+
+    .startPlaningBtn {
+        left: 650px;
+        top: 580px;
+        padding: 17px 40px;
+        font-size: 15px;
+    }
+}
+
+/* Styles for screens between 768px and 1024px (tablets) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .CenterText1 {
+        font-size: 50px;
+        top: 150px;
+    }
+
+    .CenterText2 {
+        font-size: 16px;
+        top: 180px;
+    }
+
+    .startPlaningBtn {
+        left: 50%;
+        top: 400px;
+        padding: 15px 30px;
+        font-size: 14px;
+        transform: translateX(-50%);
+    }
+}
+
+/* Styles for screens smaller than 768px (phones) */
+@media (max-width: 768px) {
+    .CenterText1 {
+        font-size: 30px;
+        top: 350px;
+        line-height: 30px;
+    }
+
+    .CenterText2 {
+        font-size: 9px;
+        top: 360px;
+        line-height: 10px;
+
+    }
+
+    .startPlaningBtn {
+        left: 50%;
+        top: 500px;
+        padding: 12px 25px;
+        font-size: 12px;
+        transform: translateX(-50%);
+    }
+}

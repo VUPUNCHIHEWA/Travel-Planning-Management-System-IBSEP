@@ -1,0 +1,139 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 10%;
+    background: rgba(0, 0, 0, 0.437);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 32px;
+    color: white;
+    font-weight: 700;
+    position: relative;
+    left: 140px;
+}
+
+.navbar a { 
+    position: relative;
+    left: -170px;
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    margin-left: 30px;
+
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: .5s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.btn {
+    font-size: 17px;
+    padding: 10px 25px;
+    border: transparent;
+    background: #228B22;
+    color: white;
+    border-radius: 20px;
+    font-weight: 400;
+    position: relative;
+    left: -100px;
+    margin-left: 20px;
+    cursor: pointer;
+   }
+
+.btn:hover {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(255, 248, 30, 0.295) 0%, rgba(99, 76, 0, 0.388) 100%);
+   }
+   
+.btn:active {
+    transform: translate(0em, 0.2em);
+   }
+
+
+
+
+
+/* For screens smaller than 768px (tablets and mobile devices) */
+@media (max-width: 768px) {
+    .header {
+      padding: 15px 3%; /* Reduced padding */
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .logo {
+      left: 0;
+      font-size: 22px; /* Reduced font size */
+      margin-bottom: 8px; /* Reduced margin */
+    }
+  
+    .navbar {
+      display: flex;
+      flex-direction: column;
+      width: 90%; /* Reduced width */
+    }
+  
+    .navbar a {
+      position: relative;
+      left: 0;
+      margin-left: 0;
+      font-size: 16px; /* Reduced font size */
+      margin-bottom: 0px; /* Reduced margin */
+    }
+  
+    .btn {
+      font-size: 14px; /* Reduced font size */
+      padding: 6px 15px; /* Reduced padding */
+      left: 0;
+      margin-left: 0;
+      margin-top: 8px; /* Reduced margin-top */
+      line-height: 20px;
+      width: auto;
+
+    }
+  }
+  
+  /* For screens smaller than 480px (phones) */
+  @media (max-width: 480px) {
+    .header {
+      padding: 10px 2%; /* Further reduced padding */
+    }
+  
+    .logo {
+      font-size: 18px; /* Further reduced font size */
+    }
+  
+    .navbar {
+      width: 95%; /* Further reduced width */
+    }
+  
+    .navbar a {
+      font-size: 14px; /* Further reduced font size */
+      margin-bottom: 6px; /* Further reduced margin */
+    }
+  
+    .btn {
+      font-size: 12px; /* Further reduced font size */
+      padding: 4px 10px; /* Further reduced padding */
+      margin-top: 6px; /* Further reduced margin-top */
+    }
+  }
+  
